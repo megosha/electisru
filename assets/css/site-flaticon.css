@@ -1,0 +1,108 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 23/01/2020 13:10
+  	*/
+  /*
+    Flaticon icon font: Flaticon
+    Creation date: 08/09/2018 00:19
+    */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-telegram:before { content: "\f100"; }
+.flaticon-call:before { content: "\f101"; }
+.flaticon-customer-service:before { content: "\f102"; }
+.flaticon-service:before { content: "\f103"; }
+.flaticon-percentage:before { content: "\f104"; }
+.flaticon-save-money:before { content: "\f105"; }
+.flaticon-museum:before { content: "\f106"; }
+.flaticon-computer:before { content: "\f107"; }
+.flaticon-wireframe:before { content: "\f108"; }
+.flaticon-corporate:before { content: "\f109"; }
+.flaticon-shuttle:before { content: "\f10a"; }
+.flaticon-diamond:before { content: "\f10b"; }
+.flaticon-index:before { content: "\f10c"; }
+.flaticon-profits:before { content: "\f10d"; }
+.flaticon-coins:before { content: "\f10e"; }
+.flaticon-import:before { content: "\f10f"; }
+.flaticon-insurance:before { content: "\f110"; }
+.flaticon-idea:before { content: "\f111"; }
+.flaticon-success:before { content: "\f112"; }
+.flaticon-money:before { content: "\f113"; }
+.flaticon-lab:before { content: "\f114"; }
+.flaticon-group:before { content: "\f115"; }
+.flaticon-contract:before { content: "\f116"; }
+.flaticon-portfolio:before { content: "\f117"; }
+.flaticon-collaboration:before { content: "\f118"; }
+.flaticon-innovation:before { content: "\f119"; }
+.flaticon-team:before { content: "\f11a"; }
+.flaticon-meeting:before { content: "\f11b"; }
+.flaticon-analysis:before { content: "\f11c"; }
+.flaticon-github:before { content: "\f11d"; }
+.flaticon-linkedin:before { content: "\f11e"; }
+.flaticon-email:before { content: "\f11f"; }
+.flaticon-envelope:before { content: "\f120"; }
+.flaticon-location:before { content: "\f121"; }
+.flaticon-chat:before { content: "\f122"; }
+.flaticon-time-call:before { content: "\f123"; }
+.flaticon-heart:before { content: "\f124"; }
+.flaticon-employee:before { content: "\f125"; }
+.flaticon-user:before { content: "\f126"; }
+.flaticon-support:before { content: "\f127"; }
+.flaticon-flow-chart:before { content: "\f128"; }
+.flaticon-process:before { content: "\f129"; }
+.flaticon-planning:before { content: "\f12a"; }
+.flaticon-process-1:before { content: "\f12b"; }
+.flaticon-chat-bubble:before { content: "\f12c"; }
+.flaticon-support-2:before { content: "\f12d"; }
+.flaticon-support-1:before { content: "\f12e"; }
+.flaticon-call-center:before { content: "\f12f"; }
+.flaticon-technical-support:before { content: "\f130"; }
+.flaticon-source:before { content: "\f131"; }
+.flaticon-monitor:before { content: "\f132"; }
+.flaticon-menu:before { content: "\f133"; }
+.flaticon-information:before { content: "\f134"; }
+.flaticon-bounce:before { content: "\f135"; }
+.flaticon-login:before { content: "\f136"; }
+.flaticon-arrow-chart:before { content: "\f137"; }
+.flaticon-google:before { content: "\f138"; }
+.flaticon-folder:before { content: "\f139"; }
+.flaticon-self-awareness:before { content: "\f13a"; }
+.flaticon-blockchain:before { content: "\f13b"; }
+.flaticon-diagnostic:before { content: "\f13c"; }
+.flaticon-monitor-1:before { content: "\f13d"; }
+.flaticon-content:before { content: "\f13e"; }
+.flaticon-idea-1:before { content: "\f13f"; }
+.flaticon-testing:before { content: "\f140"; }
+.flaticon-placeholder:before { content: "\f141"; }

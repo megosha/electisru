@@ -1,0 +1,191 @@
+
+
+/*-------------------------------------------------------
+03. Hero css  background-image: linear-gradient(160deg, var(--clr-def) 0%, var(--clr-def-2) 100%);
+---------------------------------------------------------*/
+
+@mixin hero {
+    height: 100vh;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+	z-index: 1;
+	.hero-shape {
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		bottom: 0;
+		img {
+			width: 100%
+		}
+	}
+}
+
+//Hero 1 #00008B
+
+.hero-single {
+	position: relative;
+	z-index: 1;
+    @include hero;
+	&::before {
+		position: absolute;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+		background-color: #0B0F28;
+		opacity: 0.8;
+		top: 0;
+		left: 0;
+		content: '';
+	}
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+        .hero-title {
+            margin-bottom: 3rem;
+			color: var(--clr-white);
+			line-height: 7.2rem;
+        }
+		.hero-sub-title {
+			margin-bottom: 2rem;
+			color: var(--clr-white);
+		}
+		
+		p {
+			color: var(--clr-white);
+			font-size: 1.6rem;
+			line-height: 30px;
+			font-weight: 400;
+			margin-bottom: 4rem;
+			padding: 0 10rem;
+		}
+		
+        .hero-btn {
+            gap: 2rem;
+            line-height: 1;
+            display: flex;
+            margin-top: 1rem;
+			justify-content: center;
+        }
+    }
+    .hero-right-pic {
+        text-align: center;
+    }
+}
+
+.hero-title {
+	font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.6;
+	letter-spacing: -0.005em;
+}
+
+.hero-sub-title {
+	font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+//Play Button
+
+//HTML
+//<div class="pl">
+//<a href="#" class="item popup-youtube play-bt">
+//<i>
+//<img src="assets/img/icons/play-button-1.png" alt="Itsol">
+//</i>
+//</a>
+//</div>
+
+.play-bt {
+    width: 9rem;
+    height: 9rem;
+    line-height: 9rem;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--clr-def);
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	&::before {
+		content: '';
+		background-color: var(--clr-def);
+		opacity: .4;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		z-index: 0;
+		pointer-events: none;
+		-webkit-animation: button_wave 3s infinite ease-in-out;
+		animation: button_wave 3s infinite ease-in-out;
+	}
+}
+
+
+@-webkit-keyframes button_wave{
+  0% {
+    -webkit-box-shadow: 0 0 0 30px rgba(0, 170, 235,.65),0 0 0 50px rgba(0, 170, 235,.8);
+    box-shadow: 0 0 0 30px rgba(0, 170, 235,.65),0 0 0 50px rgba(0, 170, 235,.8);
+  }
+  50% {
+    -webkit-box-shadow:none;
+    box-shadow:none;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 30px rgba(0, 170, 235,.65),0 0 0 50px rgba(0, 170, 235,.8);
+    box-shadow: 0 0 0 30px rgba(0, 170, 235,.65),0 0 0 50px rgba(0, 170, 235,.8);
+  }
+}
+
+//Hero Slider
+
+.hero-sldr.owl-theme .owl-nav {
+    margin-top: 0px;
+}
+
+.hero-sldr.owl-theme .owl-nav [class*=owl-] {
+    color:var(--clr-white);
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    background: var(--clr-def);
+    display: inline-block;
+    cursor: pointer;
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 0 0px 10px rgba(55, 81, 126,.8);
+}
+
+.hero-sldr.owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--clr-white);
+    color: var(--clr-def);
+}
+
+.hero-sldr.owl-theme .owl-nav .owl-prev {
+	left: 5rem;
+}
+
+.hero-sldr.owl-theme .owl-nav .owl-next {
+	right: 5rem;
+}
+
+.hero-sldr.owl-theme .owl-nav .owl-prev,
+.hero-sldr.owl-theme .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+

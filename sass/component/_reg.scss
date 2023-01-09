@@ -1,0 +1,78 @@
+/*-------------------------------------------------------
+17. Register css 
+---------------------------------------------------------*/
+
+.reg-wpr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    text-align: center;
+    width: 47rem;
+    padding: 6rem 5rem;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 2rem;
+	background-color: var(--clr-white);
+    .header-icon {
+        display: block;
+        margin-bottom: 3rem;
+    }
+    .input-style-2 {
+        height: 5.5rem;
+        border-radius: 4px;
+		border: 1px solid #eee;
+        &::placeholder {
+            font-size: 1.6rem;
+        }
+    }
+    .login-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .reg-acc {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.005em;
+        margin-top: 3rem;
+        a {
+            color: var(--clr-def);
+        }
+    }
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+    margin-top: 0;
+    vertical-align: top;
+    float: inherit;
+    margin-left: -3em;
+}
+
+.rs-ps {
+    margin-top: -7px;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.form-check-label {
+    color: var(--clr-body);
+    margin-left: 1rem;
+}
+
+.register-title {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.005em;
+}

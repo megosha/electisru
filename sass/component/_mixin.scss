@@ -1,0 +1,59 @@
+
+
+/*-------------------------------------------------------
+02. Mixins Css #070E27
+---------------------------------------------------------*/
+
+@mixin pos-rel {
+	position: relative;
+	z-index: 1;
+}
+
+@mixin pos-abs {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+    background-color: #0B0F28;
+    opacity: 0.8;
+	content: '';
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+//btn 2
+
+@mixin btn-2 {
+	position: absolute;
+	content: '';
+	background-color: var(--clr-black);
+	height: 0%;
+	width: 100%;
+	left: 0;
+	transition: all .5s ease;
+	z-index: -1;
+	opacity: .5;
+}
+
+//Header Top List
+
+@mixin top-sty {
+    color:  var(--clr-white);
+    font-size: 1.8rem;
+    font-weight: 500; 
+}
+
+
+//bg
+
+@mixin fd {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top left;
+}

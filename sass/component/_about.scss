@@ -1,0 +1,148 @@
+/*-------------------------------------------------------
+9. About css
+---------------------------------------------------------*/
+
+
+.about-right {
+	padding-left: 5rem;
+	.about-list {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		li {
+			padding-bottom: 2.5rem;
+    		border-bottom: 3px dashed var(--clr-heading);
+			&:last-child {
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.about-list-wpr {
+	display: flex;
+    align-items: center;
+    gap: 3rem;
+	.about-list-icon {
+		i {
+			font-size: 7rem;
+		}
+	}
+	.about-list-title {
+		letter-spacing: -.72px;
+		margin-bottom: 1.3rem;
+	}
+}
+
+.site-sub-heading {
+	font-size: 2.2rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: 3px solid var(--clr-def);
+    display: inline-block;
+	.site-wave {
+		position: absolute;
+		z-index: -1;
+		width: 12rem;
+		height: 7.4rem;
+		top: -15px;
+		left: -15px;
+	}
+}
+
+.site-heading {
+	font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.8px;
+    margin-bottom: 4rem;
+}
+
+.about-para {
+	font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+//About 2
+
+
+.about-2 {
+	.skill-right {
+		.skill-desc {
+			font-weight: 400;
+			padding-bottom: 5rem;
+			margin-bottom: 5rem;
+			border-bottom: 3px dashed var(--clr-heading);
+		}
+	} 
+	.skill-left-pic {
+		position: relative;
+		z-index: 1;
+		.about-tri {
+			position: absolute;
+			left: 0;
+			bottom: 30px;
+			.about-tri-text {
+				position: absolute;
+				top: 40%;
+				left: 4rem;
+				span {
+					font-size: 5rem;
+					display: block;
+					margin-bottom: 2rem;
+					color: var(--clr-def);
+					font-weight: 700;
+					text-align: center;
+				}
+				p {
+					color: var(--clr-white);
+				}
+			}
+		}
+	}
+	.about-2-list {
+		column-count: 2;
+		li {
+			.about-list-opt {
+				display: flex;
+				align-items: center;
+				gap: 1.5rem;
+				margin-bottom: 2rem;
+				&
+				i {
+					position: relative;
+					z-index: 1;
+					display: block;
+					height: 5rem;
+					width: 5rem;
+					line-height: 5rem;
+					text-align: center;
+					background-color: var(--clr-def);
+					color: var(--clr-white);
+					font-size: 2rem;
+					border-radius:  48% 52% 41% 59% / 49% 43% 57% 51%;
+					
+				}
+				h4 {
+					font-weight: 500;
+					font-size: 1.6rem;
+					letter-spacing: -1px;
+				}
+			}
+			&:last-child {
+				.about-list-opt {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+
+

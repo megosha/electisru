@@ -1,0 +1,133 @@
+/*-------------------------------------------------------
+18. Team css 
+---------------------------------------------------------*/
+
+.team-box {
+	overflow: hidden;
+	.team-pic {
+		position: relative;
+		z-index: 1;
+		.team-overlay {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			&::before {
+				position: absolute;
+				content: '';
+				background-color: rgba(0,0,0,.7);
+				height: 0;
+				width: 100%;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				transition: 1s ease;
+			}
+			.team-bio {
+				background-color: var(--clr-def);
+				text-align: center;
+				border-radius: 5px;
+				position: absolute;
+				bottom: 15px;
+				left: 50%;
+				padding: 2rem;
+				transform: translate(-50%,0);
+				width: 90%;
+				line-height: 1;
+				transition: all .5s ease;
+				h5 {
+					text-transform: capitalize;
+					line-height: 1;
+					margin-bottom: 5px;
+					color: var(--clr-white);
+				}
+				span {
+					font-size: 1.5rem;
+					line-height: 1;
+					color: var(--clr-white);
+				}
+			}
+			.team-social {
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				li {
+					position: absolute;
+					bottom: -5rem;
+					&:first-child {
+						left: 2rem;
+						transition: 1s ease;
+						transition-delay: 1s;
+					}
+					&:nth-child(2) {
+						left: 6.5rem;
+						transition: 1s ease;
+						transition-delay: .5s;
+					}
+					&:nth-child(3) {
+						left: 50%;
+						transition: 1s ease;
+						transform: translate(-50%);
+					}
+					&:nth-child(4) {
+						right: 6.5rem;
+						transition: 1s ease;
+						transition-delay: .5s;
+						
+					}
+					&:nth-child(5) {
+						right: 2rem;
+						transition: 1s ease;
+						transition-delay: 1s;
+					}
+					a {
+						i {
+							height: 4rem;
+							width: 4rem;
+							line-height: 4rem;
+							text-align: center;
+							background-color: var(--clr-def);
+							color: var(--clr-white);
+							border-radius: 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+	&:hover {
+		.team-pic {
+			.team-overlay {
+				&::before {
+					height: 100%;
+				}
+				.team-bio {
+					transform: translate(-50%,100px);
+				}
+			}
+			.team-social {
+				li {
+					&:first-child {
+						bottom: 2rem;
+					}
+					&:nth-child(2) {
+						bottom: 6rem;
+					}
+					&:nth-child(3) {
+						bottom: 10rem;
+					}
+					&:nth-child(4) {
+    					bottom: 6rem;
+						
+					}
+					&:nth-child(5) {
+						bottom: 2rem;
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,39 @@
+/*-------------------------------------------------------
+13. Skill css
+---------------------------------------------------------*/
+
+
+.str-box {
+	position: relative;
+	z-index: 1;
+	.str-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		background-color: rgba(0,0,0,.7);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.str-icon {
+			i {
+				color: var(--clr-def);
+				font-size: 7rem;
+				display: inline-block;
+			}
+			margin-bottom: 4rem;
+			padding-bottom: 4rem;
+			border-bottom: 3px dashed var(--clr-def);
+		}
+		.str-title {
+			color: var(--clr-white);
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+	}
+}

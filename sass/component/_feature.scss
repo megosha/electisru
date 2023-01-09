@@ -1,0 +1,59 @@
+/*-------------------------------------------------------
+19. Feature css 
+---------------------------------------------------------*/
+
+.feature-box {
+	position: relative;
+	z-index: 1;
+	padding: 35px 25px;
+	border: 2px solid #e7edf8;
+	.feature-icon {
+		margin-bottom: 2.2rem;
+		i {
+			font-size: 7rem;
+			display: block;
+		}
+	}
+	.feature-desc {
+		h4 {
+			font-size: 2rem;
+			line-height: 32px;
+			margin-bottom: 2rem;
+		}
+		p {
+			margin-bottom: 2rem;
+		}
+	}
+	
+	&:hover {
+		.feature-button {
+			a {
+				i {
+					color: var(--clr-white);
+					background-color: var(--clr-def);
+				}
+			}
+		}
+	}
+}
+
+
+.feature-button {
+		position: absolute;
+		bottom: -2rem;
+		left: 2.5rem;
+		a {
+			i {
+				height: 4rem;
+				width: 4rem;
+				line-height: 4rem;
+				text-align: center;
+				border: 1px solid var(--clr-def);
+				display: inline-block;
+				border-radius: 50%;
+				color: var(--clr-def);
+				font-size: 2rem;
+				transition: background-color .5s ease;
+			}
+		}
+	}

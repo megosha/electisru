@@ -1,0 +1,28 @@
+/*-------------------------------------------------------
+10. RTL css
+---------------------------------------------------------*/
+
+body.rtl-mode {
+	direction: rtl;
+	//Demo
+	.item-area {
+		direction: ltr;
+	}
+	//Price
+	
+	.price-wpr {
+		direction: rtl;
+	}
+	
+	//Menu
+	@media (min-width: 992px) {
+		.navbar-brand {
+			margin-left: 3rem;
+		}
+		.navbar .nav-item .nav-link {
+			margin-left: 3rem;
+			margin-right: 0;
+		}
+	}
+}
+

@@ -1,0 +1,89 @@
+/*-------------------------------------------------------
+11. CTA css
+---------------------------------------------------------*/
+
+.cta-content {
+    padding: 5rem 4rem;
+    border-radius: 1rem;
+    background-color: var(--clr-heading);
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		z-index: -1;
+		content: '';
+		height: 250px;
+		width: 250px;
+		right: 15px;
+		top: 15px;
+		border-radius: 50%;
+		background-color: var(--clr-def);
+	}
+	h5 {
+		color: var(--clr-white);
+		margin-bottom: 3rem;
+	}
+	.cta-left-title {
+		color: var(--clr-white);
+		margin-bottom: 5rem;
+	}
+	.cta-right-title {
+		color: var(--clr-white);
+		margin-bottom: 3rem;
+	}
+	a {
+		
+	}
+	.newsletter {
+		.input-style-2 {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.newsletter {
+	.input-style-2 {
+		border: 1px solid rgba(255,255,255,.7);
+		border-radius: 3rem;
+	}
+}
+
+
+//Skill
+
+.progress-box {
+	margin-bottom: 4rem;
+	position: relative;
+	z-index: 1;
+	padding-left: 3rem;
+	&::before {
+		position: absolute;
+		z-index: -1;
+		content: '';
+		height: 1rem;
+		width: 1rem;
+		background-color: var(--clr-def);
+		top: 5px;
+		left: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	h5 {
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		font-weight: 400;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	.progress {
+		height: 5px;
+		background-color: #7d7d7d;
+		border-radius: 0;
+		.progress-bar {
+			background-color: var(--clr-def);
+		}
+	}
+}

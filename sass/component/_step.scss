@@ -1,0 +1,140 @@
+
+
+/*-------------------------------------------------------
+20. Step css
+---------------------------------------------------------*/ 
+
+
+ .process-box {
+	text-align: center;
+	.proc-icon {
+		height: 19rem;
+		i {
+			height: 10rem;
+			width: 10rem;
+			line-height: 10rem;
+			color: var(--clr-white);
+			background: var(--clr-def);
+			border-radius: 69% 31% 69% 31% / 35% 51% 49% 65%;
+			font-size: 4.5rem;
+		}
+	}
+	.proc-line {
+		span {
+			font-size: 2rem;
+			font-weight: 600;
+			height: 4rem;
+			width: 4rem;
+			line-height: 4rem;
+			text-align: center;
+			background: #ddd;
+			display: block;
+			margin: 2rem auto;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			position: relative;
+			z-index: 1;
+			box-shadow: 0 0 0px 10px rgba(55,81,126,.1);
+		}
+	}
+	.proc-desc {
+		h5 {
+			text-transform: capitalize;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+.process-box.bottom-line {
+	.proc-icon {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.proc-line {
+		span {
+			&::before {
+				position: absolute;
+				content: '';
+				height: 15rem;
+				width: 3px;
+				left: 50%;
+				background: #ddd;
+				z-index: -1;
+				margin-left: -1px;
+				bottom: 0;
+			}
+			&::after {
+				position: absolute;
+				content: '';
+				display: inline-block;
+				left: 50%;
+				margin-left: -10px;
+				bottom: 9rem;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 1rem 1rem 1rem;
+				border-color: transparent transparent #ddd transparent;
+				-webkit-transition: .5s ease;
+				transition: .5s ease;
+			}
+		}
+	}
+	&:hover {
+		.proc-line {
+			span {
+				&::after {
+					bottom: 14.1rem;
+				}
+			}
+		}
+	}
+}
+.process-box.top-line {
+	.proc-icon {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.proc-line {
+		span {
+			&::before {
+				position: absolute;
+				content: '';
+				height: 15rem;
+				width: 3px;
+				left: 50%;
+				background: #ddd;
+				z-index: -1;
+				margin-left: -1px;
+				top: 0;
+			}
+			&::after {
+				position: absolute;
+				content: '';
+				display: inline-block;
+				left: 50%;
+				margin-left: -10px;
+				top: 9rem;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 1rem 1rem 0 1rem;
+				border-color: #ddd transparent transparent transparent;
+				-webkit-transition: .5s ease;
+				transition: .5s ease;
+			}
+		}
+	}
+	&:hover {
+		.proc-line {
+			span {
+				&::after {
+					top: 14.1rem;
+				}
+			}
+		}
+	}
+}

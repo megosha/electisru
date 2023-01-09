@@ -1,0 +1,198 @@
+/*-------------------------------------------------------
+14. Work css
+---------------------------------------------------------*/
+
+
+.port-load {
+    line-height: 1;
+}
+
+.work-box {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	.work-pic-main {
+		transition: all .5s ease-in-out; 
+	}
+	.work-overlay {
+		position: absolute;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.6);
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		top: 0;
+		left: 0;
+		transform: rotateX(90deg);
+		transition: all .5s ease-in-out; 
+		h5 {
+			font-size: 2rem;
+			color: var(--clr-white);
+			font-weight: 600;
+			margin-bottom: 2rem;
+		}
+		a {
+			i {
+				color: var(--clr-white);
+			}
+		}
+	}
+	&:hover {
+		.work-pic-main {
+			transform: scale(1.2) skewX(10deg);
+		}
+		.work-overlay {
+			transform: rotateX(0deg);
+		}
+	}
+}
+
+.work-shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	z-index: -1;
+	width: 211px;
+	width: 220px;
+    opacity: .6;
+}
+
+
+//Portfolio 2
+
+@mixin porthover {
+	opacity: 1;
+	visibility: visible;
+}
+
+.project-box {
+	width: 100%;
+	display: none;
+	.port-pic {
+		position: relative;
+		z-index: 1;
+		
+		img {
+		}
+		.port-overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 1;
+			overflow: hidden;
+			&::after {
+				position: absolute;
+				content: '';
+				z-index: -1;
+				height: 100%;
+				width: 0;
+				bottom: 0;
+				left: 0;
+				background-color: #0B0F28;
+				transition: all .5s ease;
+				transition-delay: .1s;
+			}
+			.port-title {
+				position: absolute;
+				right: 50px;
+				top: 50px;
+				font-size: 2rem;
+				text-transform: capitalize;
+				padding-bottom: 5px;
+				margin-bottom: 0;
+				color: var(--clr-white);
+			}
+			.port-content {
+				position: absolute;
+				left: 50px;
+				bottom: 50px;
+				a {
+					i {
+						height: 4rem;
+						width: 4rem;
+						line-height: 4rem;
+						text-align: center;
+						font-size: 1.8rem;
+						color: var(--clr-def);
+						background-color: var(--clr-white);
+						border-radius: 50%;
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+		&:hover {
+			.port-overlay {
+				&::after {
+					width: 100%;
+					opacity: .9;
+					visibility: visible;
+				}
+				.port-title {
+					transform: translateY(0rem);
+					@include porthover;
+				}
+				.port-content {
+					transform: translateY(0rem);
+					@include porthover;
+				}
+			}
+		}
+	}
+	
+}
+
+@mixin porthv {
+	transition: 1.9s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.port-overlay {
+	&::before {
+		@include porthv;
+	}
+	.port-title {
+		@include porthv;
+		transform: translateX(100rem);
+	}
+	.port-content {
+		@include porthv;
+		transform: translateY(3rem);
+		transition-delay: .4s;
+	}
+}
+
+.fil-cat {
+	font-size: 1.6rem;
+	font-family: var(--font-2);
+	color: var(--clr-black);
+	border: none;
+	outline: none;
+	text-transform: capitalize;
+	font-weight: 400;
+	margin-right: 1.5rem;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.fil-cat:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.fil-cat:hover {
+	color: var(--clr-def);
+}
+
+.fil-cat.active {
+	color: var(--clr-def);
+}
+

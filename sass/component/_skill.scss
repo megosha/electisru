@@ -1,0 +1,59 @@
+/*-------------------------------------------------------
+12. Skill css
+---------------------------------------------------------*/
+
+.skill-wpr.grid-2 {
+    grid-gap: 6rem;
+}
+
+.skill-right {
+	.skill-desc {
+		margin-bottom: 3rem;
+		margin-bottom: 4rem;
+		font-weight: 500;
+	}
+	.site-heading {
+		font-size: 5rem;
+		line-height: 60px;
+		margin-bottom: 3rem;
+	}
+}
+
+.progress-box {
+	margin-bottom: 4rem;
+	position: relative;
+	z-index: 1;
+	padding-left: 3rem;
+	&::before {
+		position: absolute;
+		z-index: -1;
+		content: '';
+		height: 1rem;
+		width: 1rem;
+		background-color: var(--clr-def);
+		top: 5px;
+		left: 0;
+		border-radius: 50%;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	h5 {
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		font-weight: 400;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	.progress {
+		height: 5px;
+		background-color: #7d7d7d;
+		border-radius: 0;
+		.progress-bar {
+			background-color: var(--clr-def);
+		}
+	}
+}
+

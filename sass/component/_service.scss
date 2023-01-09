@@ -1,0 +1,144 @@
+/*-------------------------------------------------------
+10. Service css
+---------------------------------------------------------*/
+
+.service-box {
+    background: var(--clr-white);
+    padding: 5rem 4rem;
+	position: relative;
+	z-index: 1;
+	.service-shape {
+		img {
+			position: absolute;
+			top: 20px;
+			left: 10px;
+			z-index: -1;
+		}
+	}
+	.service-up {
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+		margin-bottom: 3rem;
+		.service-icon {
+			i {
+				font-size: 7rem;
+			}
+		}
+		h4 {
+			font-size: 22px;
+			line-height: 32px;
+			letter-spacing: -0.675px;
+			margin-bottom: 0;
+			text-transform: capitalize;
+		}
+	}
+	.service-desc {
+		margin-bottom: 3rem;
+	}
+	&:hover {
+		.service-dots {
+			.service-dot {
+				animation: colorChange .9s ease-in-out infinite;
+				&:first-child {
+					animation-delay: .2s;
+				}
+				&:nth-child(2) {
+					animation-delay: .3s;
+				}
+				&:nth-child(3) {
+					animation-delay: .4s;
+				}
+			}
+		}
+	}
+}
+
+.service-dots {
+	position: absolute;
+    right: 4rem;
+    bottom: 6.5rem;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+	.service-dot {
+		height: 1rem;
+		width: 1rem;
+		background-color: var(--clr-def);
+		border-radius: 50%;
+	}
+}
+
+@keyframes colorChange {
+	0% {
+		background-color: var(--clr-def);
+	}
+
+	50% {
+		background-color: var(--clr-bg);
+	}
+	100% {
+	  	background-color: var(--clr-def);
+	}
+}
+
+.service-rd-mr {
+	a {
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+		color: var(--clr-heading);
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		i {
+			text-align: center;
+			display: inline-block;
+			font-size: 1.5rem;
+			color: var(--clr-def);
+			border: 2px solid var(--clr-def);
+			width: 4rem;
+			height: 4rem;
+			line-height: 38px;
+			border-radius: 50%;
+		}
+	}
+}
+
+//Service 2
+
+.service-2-wpr.grid-3 {
+    row-gap: 4rem;
+}
+
+.service-2-box {
+	position: relative;
+	z-index: 1;
+	padding: 35px 25px;
+	border: 2px solid #e7edf8;
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	background-color: var(--clr-white);
+	.service-2-icon {
+		i {
+			font-size: 7rem;
+			display: block;
+		}
+	}
+	.service-2-desc {
+		h4 {
+			font-size: 2.2rem;
+			line-height: 3.2rem;
+		}
+	}
+	&:hover {
+		.feature-button {
+			a {
+				i {
+					color: var(--clr-white);
+					background-color: var(--clr-def);
+				}
+			}
+		}
+	}
+}
