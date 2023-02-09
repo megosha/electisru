@@ -351,11 +351,11 @@
 						.attr('disabled', 'disabled');
 
 					$.post(action, {
-							name: $('#name').val(),
-							email: $('#email').val(),
-							subject: $('#subject').val(),
-							website: $('#website').val(),
-							comments: $('#comments').val()
+							name: $('#c_name').val(),
+							email: $('#c_contact').val(),
+							subject: $('#c_text').val(),
+							// website: $('#website').val(),
+							// comments: $('#comments').val()
 						},
 						function(data) {
 							document.getElementById('message').innerHTML = data;
