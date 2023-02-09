@@ -1589,7 +1589,8 @@ button.navbar-toggler:focus {
           color: var(--clr-white);
           font-weight: 700;
           text-transform: uppercase; }
-        .faq-pic .faq-pic-overlay ul li .faq-add .faq-ad p {
+        .faq-pic .faq-pic-overlay ul li .faq-add .faq-ad p,
+        .faq-pic .faq-pic-overlay ul li .faq-add .faq-ad a {
           color: var(--clr-white);
           line-height: 2;
           font-weight: 500;
