@@ -353,7 +353,7 @@
 					$.ajax({
 						url: action,
 						type: 'post',
-						headers: {'Authorization': 'Bearer very_secret_token'},
+						headers: {'Authorization': 'Bearer uKkcYq5v3h'},
 						dataType: 'json',
 						data: {
 							name: $('#c_name').val(),
