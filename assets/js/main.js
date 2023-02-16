@@ -361,12 +361,12 @@
 							text: $('#c_text').val(),
 						},
 						success: function(data) {
-							document.getElementById('message').innerHTML = data;
+							document.getElementById('message').innerHTML = "Отправлено";
 							$('#message').slideDown('slow');
 							$('.contact-form img.loader').fadeOut('slow', function () {
 								$(this).remove();
 							});
-							$('#submit').removeAttr('disabled');
+							// $('#submit').removeAttr('disabled');
 						}
 					});
 				});
