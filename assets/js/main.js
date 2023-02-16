@@ -342,7 +342,7 @@
 			formInstance.submit(function() {
 
 				var action = $(this).attr('action');
-
+				console.log(action)
 				$("#message").slideUp(750, function() {
 					$('#message').hide();
 
@@ -350,22 +350,25 @@
 						.after('<img src="assets/img/logo/ajax-loader.gif" class="loader" />')
 						.attr('disabled', 'disabled');
 
-					$.post(action, {
+					$.ajax({
+						url: action,
+						type: 'post',
+						headers: {'Authorization': 'Bearer very_secret_token'},
+						dataType: 'json',
+						data: {
 							name: $('#c_name').val(),
-							email: $('#c_contact').val(),
-							subject: $('#c_text').val(),
-							// website: $('#website').val(),
-							// comments: $('#comments').val()
+							contact: $('#c_contact').val(),
+							text: $('#c_text').val(),
 						},
-						function(data) {
+						success: function(data) {
 							document.getElementById('message').innerHTML = data;
 							$('#message').slideDown('slow');
-							$('.contact-form img.loader').fadeOut('slow', function() {
+							$('.contact-form img.loader').fadeOut('slow', function () {
 								$(this).remove();
 							});
 							$('#submit').removeAttr('disabled');
 						}
-					);
+					});
 				});
 				return false;
 			});
